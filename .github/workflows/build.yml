@@ -33,7 +33,7 @@ jobs:
         run: npm i -g @railway/cli
 
       - name: Deploy
-        run: RAILWAY_TOKEN=$GOWEB3 railway up --service=GOWEB3
+        run: RAILWAY_TOKEN=$RAILWAY_TOKEN railway up --service=GOWEB3
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_TOKEN: ${{ secrets.GOWEB3 }}
      
